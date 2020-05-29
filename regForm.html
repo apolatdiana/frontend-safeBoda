@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafaBoda Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="./form.css">
+     <link rel="icon" href="./LOGO.png" type="image/gif" sizes="20x20">
+</head>
+<body class="body">
+    <div style="padding-bottom: 4rem;">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12">
+              <img src="./_safe.png" alt="" style="width:15rem; height:5rem;" class="col-md-3 mr-5">
+              <div class="col-md-8">
+                <div class="navbar-brand text-muted" style="padding-left: 20px;">
+                  <h2><strong><i>Onboarding Portal</i></strong></h2>
+                </div>
+                <div class="float-right">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mr-auto mt-2 ml-2">
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile" href="./userdashboard.html">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" id="logout" href="./Index.html" >Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>  
+              </div>
+            </nav>
+        </div>
+        <div class="container row mt-5">   
+            <div class="col-md-12">
+                <form class = "card" style="background-color: whitesmoke;">
+                    <div style="position: relative; right: 0px;">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Registration Form</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-left">
+                            <div class="mb-4 ml-5">
+                                <img src="./pic1.jpg" alt="" style="height: 100px; width: 100px;">
+                                <br>
+                                <a href="">Upload photo</a>
+                            </div>
+                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="contact" class="form-control" placeholder="Phone Number">
+                            <input type="email" id="email" class="form-control" placeholder="Email">                   
+                            <input type="number" id="age" class="form-control" placeholder="Age">
+                        </div> 
+                        <div class="col-md-6 form-right">
+                            <input type="text" id="NIN" class="form-control" placeholder="NIN">
+                            <input type="text" id="stageName" class="form-control" placeholder="Boda Stage address">
+                            <input type="date" id="date" class="form-control" placeholder="Recruitment date">
+                            <input type="text" id="station" class="form-control" placeholder="Recruitment station">
+                            <input type="text" id="referral" class="form-control" placeholder="Referral name">
+                            <input type="text" id="nextOfKinName" class="form-control" placeholder="Next of kin name">
+                            <input type="text" id="contactOfKin" class="form-control" placeholder="Next of kin contact">
+                        </div>
+                        
+                    </div>
+                    <button class="btn btn-dark btn-block mt-2" id="save">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+        <div class="footer container-fluid" style="color: orange;">
+            <h5> <i>&copy; SafeBoda 2020</i></h5>
+          </div>
+        </div>
+    <script src="./client.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeBoda Onboarding Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+     crossorigin="anonymous">
+     <link rel="icon" href="./LOGO.png" type="image/gif" sizes="20x20">
+      <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <div>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12">
+        <img src="./_safe.png" alt="" style="width:15rem; height:5rem;" class="col-md-3 mr-5">
+        <div class="col-md-8">
+          <div class="navbar-brand text-muted" style="padding-left: 20px;">
+            <h2><strong><i>Onboarding Portal</i></strong></h2>
+          </div>
+          <div class="float-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+              </form>
+              <ul class="navbar-nav mr-auto mt-2 ml-2">
+                <li class="nav-item">
+                <a class="nav-link" id="logout" href="./Index.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>  
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row content flex-container">
+          <div class="col-sm-3 sidenav">
+              <header class="major">
+                  <img src="./pic1.jpg" class="avatar" style="width: 80px; height: 80px;"><br>
+                  <p><a href="" style="color: white;">Upload photo</a></p>
+              </header>
+              <h5 id="username"></h5>
+              <ul class="nav nav-pills nav-stacked flex-sm-column mt-4 list-group" id="dash">
+                <li class="nav-link "><a href="#"style="color: white;" >Profile</a></li>
+                <li class="nav-link"><a href="./regForm.html " style="color: white;" >Register client</a></li>
+                <li class="nav-link"><a href="./clientTable.html" style="color: white;">Registered clients</a></li>
+              </ul><br>
+          </div>
+        
+          <div class="col-sm-9 main">
+              <h3><strong>Dashboard</strong><span><button class=" btn btn-warning float-right"><a href="./regForm.html" style="color: white;">Register client</a></button></span></h3>
+              <hr>
+              <div class="col-md-5" style="border-right: solid 2px orange;">
+                <h5 style="text-decoration: underline;">Personal Details</h5>
+                <ul id="details" class="list-group list-group-flush">
+
+                </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="footer container-fluid" style="color: orange;">
+      <h5> <i>&copy; SafeBoda 2020</i></h5>
+    </div>
+  </div>
+  <script src="./userdashboard.js"></script>
+</body>
+</html>
